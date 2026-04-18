@@ -40,3 +40,38 @@ body {
   font-size: 1.2em;
   padding: 0% 0.5em;
 }
+.corpo {
+  margin: 2em;
+}
+.foto-perfil {
+  width: max-content;
+  max-width: 19em;
+  object-fit: cover;
+}
+.imagem-foto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.texto {
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  width: max-content;
+  width: 100%;
+  font-size: 4em;
+  font-weight: bold;
+  position: relative;
+}
+.texto::before {
+  content: "";
+  position: absolute;
+  background: url(../img/detalhe.svg);
+  background-size: contain;
+  display: block;
+  width: 65px;
+  height: 65px;
+  left: 350px;
+  bottom: 180px;
+  z-index: -1;
+}
