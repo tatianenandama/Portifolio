@@ -13,65 +13,62 @@ html,
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.principal {
-  margin: 2em auto;
+.grid {
+  display: grid;
+  margin: 0 auto;
 }
 .banner {
   display: flex;
-
   justify-content: space-between;
-
-  margin: 0% 2em;
-  gap: 0.5em;
-}
-.titulo {
-  font-weight: bold;
-
-  font-size: 3em;
+  align-items: center;
+  margin: 0 40px;
 }
 .menu {
   display: flex;
-  align-items: center;
-  gap: 0.5em;
-  text-align: left;
-}
-.link {
+  gap: 20px;
   color: black;
-  font-size: 1.2em;
-  padding: 0% 0.5em;
 }
-.corpo {
-  margin: 2em;
+.texto-link {
+  color: black;
+  font-size: 1.2rem;
+}
+.titulo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 20px;
 }
 .foto-perfil {
-  width: max-content;
-  max-width: 19em;
+  width: 18em;
   object-fit: cover;
 }
-.imagem-foto {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 .texto {
-  text-align: center;
-  display: grid;
-  justify-content: center;
-  width: max-content;
-  width: 100%;
-  font-size: 4em;
+  display: flex;
+  align-items: center;
+  font-size: 3.5rem;
   font-weight: bold;
+}
+.grid-coluna {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 40px;
+
   position: relative;
 }
-.texto::before {
+.grid-coluna::after {
   content: "";
   position: absolute;
-  background: url(../img/detalhe.svg);
-  background-size: contain;
-  display: block;
-  width: 65px;
-  height: 65px;
-  left: 350px;
-  bottom: 180px;
+  top: 65px;
+  left: 690px;
+  width: 100px;
+  height: 135px;
+  background: url("./../img/detalhe.svg") no-repeat;
   z-index: -1;
+}
+
+.texto-paragrafo {
+  font-size: 1.5rem;
+  display: grid;
+  grid-column: 2;
+  margin: -70px 15px;
+  
 }
